@@ -17,4 +17,4 @@ main_app.api.add_resource(PostRes, '/api/post/<int:post_id>')  # 35:23
 main_app.api.add_resource(UserPosts, '/api/user/<user_login>')  # 43:53
 
 if __name__ == '__main__':
-    main_app.run()
+    main_app.run(port=8080, host='127.0.0.1')
